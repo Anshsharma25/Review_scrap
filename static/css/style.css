@@ -96,6 +96,7 @@ table tr:nth-child(2n+1) {
     content: 'Comments:';
   }
 
+  
   tr {
     padding: 10px 0;
     position: relative;
