@@ -72,6 +72,7 @@ def index():
                           "Comment": custComment}
                 reviews.append(mydict)
             logging.info("log my final result {}".format(reviews))
+            
             return render_template('result.html', reviews=reviews[0:(len(reviews)-1)])
         except Exception as e:
             logging.info(e)
@@ -80,7 +81,6 @@ def index():
 
     else:
         return render_template('index.html')
-
 
 if __name__=="__main__":
     app.run(host="0.0.0.0")
